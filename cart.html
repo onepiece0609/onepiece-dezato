@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | OnePiece Dezato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"><h1>OnePiece Dezato</h1></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-icon-wrap"><a href="cart.html" class="active">🛒 Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Your Selected Treats</h2>
+        
+        <div class="cart-layout">
+            <div id="cart-items" class="cart-items-container">
+                </div>
+            
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <hr style="border-color: rgba(214,175,87,0.2); margin: 1rem 0;">
+                <div class="summary-row">
+                    <span>Grand Total:</span>
+                    <strong id="cart-total" style="color: var(--gold)">₹0</strong>
+                </div>
+                <button class="btn" style="width: 100%;" onclick="checkoutWhatsApp()">Order on WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
